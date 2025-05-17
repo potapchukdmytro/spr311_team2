@@ -7,12 +7,6 @@ namespace spr311_team2.Controllers
     public class CategoryController : ControllerBase
     {
         [HttpGet]
-        public IActionResult GetAll()
-        {
-            return Ok();
-        }
-
-        [HttpGet("{id}")]
         public IActionResult GetById(int id)
         {
             return Ok();
@@ -24,13 +18,13 @@ namespace spr311_team2.Controllers
             return Ok();
         }
 
-        [HttpPut("{id}")]
-        public IActionResult Update(int id)
+        [HttpPut]
+        public IActionResult Update()
         {
             return Ok();
         }
 
-        [HttpDelete("{id}")]
+        [HttpDelete]
         public IActionResult Delete(int id)
         {
             return Ok();
